@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="fa">
+<!-- IOE ProJect -->
+<!-- internet Of EvryThing -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link Bootstrap -->
+    <link rel="stylesheet" href="../Css/minFileCss/bootstrap.min.css">
+    <!-- Link FotnAwesome For icons -->
+    <link rel="stylesheet" href="../../src/fontAs/fontawesome-free-6.1.2-web/css/all.min.css">
+    <!-- link style -->
+    <link rel="stylesheet" href="../Css/ElementStyleMenuCss/style.css">
+    <!-- this is fucking title -->
+    <title>IOEPannel</title>
+</head>
+<body>
+
+<!-- Creat NavbarSLideMenu -->
+<div class="nav-side-menu" style="direction:rtl; text-align: right;" > 
+        <div class="brand">Internet Of Evry Thing</div>
+            <div class="menu-list">
+            <!-- ul menu navbar  -->
+              <ul id="menu-content" class="menu-content collapse "  style="direction:rtl;">
+                  <!-- li brand For Add Device -->
+                    <li>
+                      <a href="#">
+                      <i class="fa fa-dashboard fa-lg"></i> وارد کردن دستگاه
+                      </a>
+                    </li>
+                <!-- li Button For Add new Device -->
+                    <li   id="addDevice" data-toggle="collapse" data-target="#products" class="collapsed active">
+                      <a href="#"><i class="fas fa-gift fa-lg"></i> دستگاه 
+                      </a>
+                    </li>
+                    <!-- Create SubMenu for subSet newDevice-->
+              <ul class="sub-menu collapse" id="products">
+                      <li  class="active collapsed"  data-toggle="collapse" data-target="#truMenuItems" aria-expanded="true" aria-controls="truMenuItems">
+                        <!-- a tag for Get the Dynamic Name  -->
+                        <a href="#" id="importDevice">     </a>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                      </li>
+        <ul class="sub-menu collapse tagMenu" id="truMenuItems">
+              <!-- modbas Subset new Device -->
+                  <li class="tagItems  active" id="ItemsModbus" >Modbus</li>
+                  <!-- anolagInput subSet newDevice -->
+                   <li class="active collapsed  tagItems  "  data-toggle="collapse" data-target="#anologInputChenels" aria-expanded="true" aria-controls="anologInputChenels">ورودی آنالوگ</li>
+              <!--anolagInputChanels SubMenu  -->
+                   <ul class="sub-menu collapse" id="anologInputChenels" >
+                          <!-- anolagInput Chanels Subset #0 -->
+                           <li class=" AnolagInputChanel" id="chanelITemON"  ><a  href="#!">#0</a></li>
+                          <!-- anolagInput Chanels Subset #1 -->
+                           <li class=" AnolagInputChanel" id="chanelITemTW"  ><a href="#!">#1</a></li>
+                          <!-- anolagInput Chanels Subset #2 -->                           
+                           <li class=" AnolagInputChanel" id="chanelITemTR"  ><a href="#!">#2</a></li>
+                          <!-- anolagInput Chanels Subset #3 -->
+                           <li class=" AnolagInputChanel" id="chanelITemFH"  ><a href="#!">#3</a></li>
+                </ul>
+                   <!-- anolagOutPut sebSet newDevive -->
+                    <li class="active collapsed  tagItems  "  data-toggle="collapse" data-target="#anologOutChenels" aria-expanded="true" aria-controls="anologOutChenels">خروجی آنالوگ</li>
+                   <!-- anolagOutput sebSet Menu -->
+                   <ul class="sub-menu collapse" id="anologOutChenels" >
+                              <!-- anolagInput Chanels Subset #0 -->
+                           <li class="AnolagOutputChanel" id="chanelOutPutOne"  ><a href="#!">#0</a></li>
+                               <!-- anolagInput Chanels Subset #1 -->
+                           <li class="AnolagOutputChanel" id="chanelOutPutTow"  ><a href="#!">#1</a></li>
+                               <!-- anolagInput Chanels Subset #2 -->
+                           <li class="AnolagOutputChanel" id="chanelOutPutThree"  ><a href="#!">#2</a></li>
+                               <!-- anolagInput Chanels Subset #3 -->                          
+                           <li class="AnolagOutputChanel" id="chanelOutPutFour"  ><a href="#!">#3</a></li>
+                   </ul>
+                   <!--digitalInput subSet newDevice  -->
+                   <li class="tagItems active" id="ItemsDI"  data-toggle="collapse" data-target="#digitalInputChenels" aria-expanded="true" aria-controls="digitalInputChenels">ورودی دیجیتال</li>
+                  <!-- digitalInput sebSet Menu -->
+                   <ul class="sub-menu collapse" id="digitalInputChenels" >
+                              <!-- digitalInput Chanels Subset #0 -->
+                        <li class="DigitalInputChanel" id="chanelDIIputOne"  ><a href="#!">#0</a></li>
+                              <!-- digitalInput Chanels Subset #1 -->
+                        <li class="DigitalInputChanel" id="chanelDIIputTow"  ><a href="#!">#1</a></li>
+                              <!-- digitalInput Chanels Subset #2 -->
+                        <li class="DigitalInputChanel" id="chanelDIIputThree"  ><a href="#!">#2</a></li>
+                              <!-- digitalInput Chanels Subset #3 -->                    
+                        <li class="DigitalInputChanel" id="chanelDIIputFour"  ><a href="#!">#3</a></li>
+                  </ul>
+                 <!--digitaloutPut subSet newDevice  -->
+                   <li class="tagItems active" id="ItemsDO"  data-toggle="collapse" data-target="#digitalOutChenels" aria-expanded="true" aria-controls="digitalOutChenels">خروجی دیجیتال</li>
+                    <!-- digitalInput sebSet Menu -->
+                   <ul class="sub-menu collapse" id="digitalOutChenels" >
+                            <!-- digitalInput Chanels Subset #0 -->
+                        <li class="DigitalOutPutChanel" id="chanelDOIputOne"  ><a href="#!">#0</a></li>
+                            <!-- digitalInput Chanels Subset #1 -->
+                        <li class="DigitalOutPutChanel" id="chanelDOIputTow"  ><a href="#!">#1</a></li>
+                            <!-- digitalInput Chanels Subset #2 -->
+                        <li class="DigitalOutPutChanel" id="chanelDOIputThree"  ><a href="#!">#2</a></li>
+                            <!-- digitalInput Chanels Subset #3 -->
+                        <li class="DigitalOutPutChanel" id="chanelDOIputFour"  ><a href="#!">#3</a></li>
+                  </ul>
+                      <!-- tag subMenu Dynamic  newDevice  for get infotmation of chanels -->
+                       <li class="tagItems  active" id="ItemsTag"  data-toggle="collapse" data-target="#tagItemsDeviceAdded" aria-expanded="true" aria-controls="tagItemsDeviceAdded"  >Tag</li>
+                           <!-- create dynamic menu for subSet tagItems  -->
+                        <ul class="submenu collapse" id="tagItemsDeviceAdded"></ul>  
+          </ul>
+      </ul>
+      <!-- wigetFor newDevice is subset for AddDevive Menu -->
+                    <li data-toggle="collapse" data-target="#service" class="collapsed">
+                      <a href="#"><i class="fa fa-globe fa-lg"></i> DeviceWigets </a>
+                    </li> 
+          <!--create dynamic Menu for Wigets  -->
+                        <ul class="  sub-menu collapse" id="service"></ul>
+          <!-- addnewpage for set newDevice Added -->
+                    <li >
+                      <a data-toggle="collapse" data-target="#AddNewPage" class="collapsed" href="#"><i class="fa fa-car fa-lg"></i>AddNewPage</a>
+                    <!-- create plus Button for get name page -->
+                    <span id="addNewPages">Add+</span>
+
+                    </li>  
+                    <!--Create dynamic Menu for ADD new Page   -->
+                    <ul class="sub-menu collapse tagMenu" id="AddNewPage">
+                    </ul> 
+                </ul>
+         </div>
+</div>
+<!-- End Structor navbar Menu -->
+
+
+<!-- create Box for show the Result -->
+<div class="container" id="boxHolder">
+  <!-- create div for show and drag drop wiget and show the form element  -->
+<div id="wigetHolder">
+  
+    <!-- create Form for get information Device  (name,serialNumber) -->
+      <div class="getSerialNumber col-lg-6 col-md-6" id="informataionDevice">
+          <form>
+          
+            <!-- input For get name  -->
+              <div class="form-group m-auto">
+                  <label for="DeviceName">نام دستگاه</label>
+                  <input type="text" class="fields  form-control" id="DeviceName" placeholder="DeviceName">
+               </div>
+               <!-- input for Get serialNumber -->
+               <div class="form-group">
+                  <label for="NumberAddress">شماره سریال</label>
+                  <input type="number" class="fields  form-control" id="NumberAddress" placeholder="SSD231">
+               </div>
+               <!-- button for save and remove -->
+               <div class="col-12 d-flex">
+                <!-- saveButton -->
+                <button type="submit" id="removeFormInformation" class="m-1 col-4 btn ">انصراف  </button>
+                <!-- removeButton -->
+                <button type="submit" id="addDEI" class="m-1 col-4  btn "> ذخیره </button>
+               </div>
+          </form>
+      </div>
+<!-- box for show the information the device have -->
+      <div class="comboBox col-md-9" style="max-height:700px;"  id="comboBox">
+      <!-- Device Name -->
+        <div class="row text-right brandCombo"  >
+          <h4 class="m-1" >RTU_2022</h4>
+        </div>
+        <!--  createButton for change display comboBox and show the anolag and digital AI DI AO DO -->
+        <div class="row" id="butonHolder">
+          <!-- anolag Input Button -->
+            <div class="col-md-3">
+              <button class="btn  btnShowAnolagResult " id="anolagInputButton" name="AnolagInputSection">
+                Anolag Input
+              </button>
+            </div>
+            <!-- anolagOutPut Button -->
+            <div class="col-md-3">
+              <button class="btn btnShowAnolagResult" id="anolagOutputButton" name="AnolagOutputSection" >
+                Anolag OutPut
+              </button>
+            </div>
+            <!-- digitalInput  Button -->
+            <div class="col-md-3">
+              <button class="btn  btnShowAnolagResult" id="digitalInputButton" name="DigitalInputSection">
+                Digital Input
+              </button>
+            </div>
+            <!-- digital OutPut Button -->
+            <div class="col-md-3">
+              <button class="btn btnShowAnolagResult" id="digitalOutputButton" name="DigitalOutputSection"> 
+                Digital OutPut
+              </button>
+            </div>
+        </div>
+        <!-- creat Section and for show and change display information anolag device  -->
+   <div class="row " style="direction: rtl;"  >
+            <!--anolag input section -->
+        <div class="IO_AD"   id="AnolagInputSection" >
+            <div class="col-md-6">
+              <div id="Options">
+                <div class="row" id="Chanels">
+                  <label for="#selectrow">Chanels</label>
+                  <div id="selectrow">
+                    <label for="chanelSelect"> 0/16</label>
+                    <select name="chanels" id="chanelSelect"> 
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                       <option value="4">4</option>
+                       <option value="5">5</option>
+                       <option value="6">6</option>
+                       <option value="7">7</option>
+                       <option value="8">8</option>
+                       <option value="9">9</option>
+                       <option value="10">10</option>
+                       <option value="11">11</option>
+                       <option value="12">12</option>
+                       <option value="13">13</option>
+                       <option value="14">14</option>
+                       <option value="15">15</option>
+                       <option value="16">16</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row" id="signalTypeRow">
+                  <label for="signalType">signalType</label>
+                  <input type="submit" value="4-20MA" id="signalType">
+                </div>
+  
+                <div class="row" style="direction:rtl ;" >
+                  <label for="#scaleDevices">Scale</label>
+                  <div id="scaleDevices">
+                    <input type="submit" id="Max" value="1000">
+                    <label for="max">Max</label>
+
+                    <input type="submit" id="Min"value="100">
+                    <label for="Min">Min</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" id="imgHolder">
+              <div id="imgDevice">
+                <img class="" style="width:100%; height:auto" src="../../src/Image/mod-2i2o-2-digital-inputs-2-digital-outputs.jpg" alt="">
+              </div>
+          </div>
+        </div>
+            <!--anolag OutPut section  -->
+        <div class="IO_AD"   id="AnolagOutputSection" >
+            <div class="col-md-6">
+              <div id="Options">
+                <div class="row" id="Chanels">
+                  <label for="#selectrow">Chanels</label>
+                  <div id="selectrow">
+                    <label for="chanelSelect"> 0/16</label>
+                    <select name="chanels" id="chanelSelect"> 
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                       <option value="4">4</option>
+                       <option value="5">5</option>
+                       <option value="6">6</option>
+                       <option value="7">7</option>
+                       <option value="8">8</option>
+                       <option value="9">9</option>
+                       <option value="10">10</option>
+                       <option value="11">11</option>
+                       <option value="12">12</option>
+                       <option value="13">13</option>
+                       <option value="14">14</option>
+                       <option value="15">15</option>
+                       <option value="16">16</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row" id="signalTypeRow">
+                  <label for="signalType">signalType</label>
+                  <input type="submit" value="4-20MA" id="signalType">
+                </div>
+                <div class="row" style="direction:rtl ;" >
+                  <label for="#scaleDevices">Scale</label>
+                  <div id="scaleDevices">
+                    <input type="submit" id="Max" value="1000">
+                    <label for="max">Max</label>
+                    <input type="submit" id="Min"value="100">
+                    <label for="Min">Min</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" id="imgHolder">
+              <div id="imgDevice">
+                <img class="" style="width:100%; height:auto" src="../../src/Image/mod-2i2o-2-digital-inputs-2-digital-outputs.jpg" alt="">
+              </div>
+          </div>
+          
+
+
+
+        </div>
+            <!-- digital Input section -->
+        <div class="IO_AD"   id="DigitalInputSection"  >
+            <div class="col-md-6">
+              <div id="Options">
+                <div class="row" id="Chanels">
+                  <label for="#selectrow">Chanels</label>
+                  <div id="selectrow">
+                    <label for="chanelSelect"> 0/16</label>
+                    <select name="chanels" id="chanelSelect"> 
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                       <option value="4">4</option>
+                       <option value="5">5</option>
+                       <option value="6">6</option>
+                       <option value="7">7</option>
+                       <option value="8">8</option>
+                       <option value="9">9</option>
+                       <option value="10">10</option>
+                       <option value="11">11</option>
+                       <option value="12">12</option>
+                       <option value="13">13</option>
+                       <option value="14">14</option>
+                       <option value="15">15</option>
+                       <option value="16">16</option>
+                    </select>
+                  </div>
+                </div>
+              <div class="row"  >
+                <label for="signalType">signalType</label>
+                <input type="submit" value="DC" id="signalType">
+              </div>
+              <div class="row" >
+                <label for="#scaleDevices">Digital In</label>
+                <div id="scaleDevices">
+                  <label for="max">0</label>
+                  <input type="submit" id="Max" value="0">V
+                  <label for="Min">1</label>
+                  <input type="submit" id="Min"value="10">V
+                </div>
+              </div>
+              </div>
+            </div>
+            <div class="col-md-6" id="imgHolder">
+              <div id="imgDevice">
+                <img class="" style="width:100%; height:auto" src="../../src/Image/mod-2i2o-2-digital-inputs-2-digital-outputs.jpg" alt="">
+              </div>
+          </div>
+          
+
+
+
+        </div>
+          <!-- digital Output section -->
+        <div class="IO_AD"   id="DigitalOutputSection" >
+            <div class="col-md-6">
+              <div id="Options">
+                <div class="row" id="Chanels">
+                  <label for="#selectrow">Chanels</label>
+                  <div id="selectrow">
+                    <label for="chanelSelect"> 0/16</label>
+                    <select name="chanels" id="chanelSelect"> 
+                       <option value="1">1</option>
+                       <option value="2">2</option>
+                       <option value="3">3</option>
+                       <option value="4">4</option>
+                       <option value="5">5</option>
+                       <option value="6">6</option>
+                       <option value="7">7</option>
+                       <option value="8">8</option>
+                       <option value="9">9</option>
+                       <option value="10">10</option>
+                       <option value="11">11</option>
+                       <option value="12">12</option>
+                       <option value="13">13</option>
+                       <option value="14">14</option>
+                       <option value="15">15</option>
+                       <option value="16">16</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row"  >
+                  <label for="signalType">signalType</label>
+                  <input type="submit" value="DC" id="signalType">
+                </div>
+                <div class="row" >
+                  <label for="#scaleDevices">Digital Out</label>
+                  <div id="scaleDevices">
+                    <label for="max">0</label>
+                    <input type="submit" id="Max" value="OpenC">
+                    <label for="Min">1</label>
+                    <input type="submit" id="Min"value="0">V
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="col-md-6" id="imgHolder">
+              <div id="imgDevice">
+                <img class="" style="width:100%; height:auto" src="../../src/Image/mod-2i2o-2-digital-inputs-2-digital-outputs.jpg" alt="">
+              </div>
+          </div>
+        </div>
+    </div>
+      <!-- descripton box for anolag and digital section -->
+        <div class="row" id="description">
+          <h5>Description</h5>
+          <p style="background-color:#F8F8F8 ; padding: 0.5rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis dolorum beatae sit non voluptatibus voluptatem sed molestiae dolores reiciendis atque qui libero distinctio, autem aliquid vitae, nulla eaque nihil omnis illum itaque. Consequuntur suscipit laudantium ullam, saepe voluptate quae.</p>
+        </div>
+        <!-- buttons for save and remove section -->
+        <div class="row" >
+          <!-- saveButton -->
+          <div class="col-4">
+            <button id="SaveDevice" class="btn ">Save</button>
+          </div>
+          <!-- removeButton -->
+          <div class="col-4">
+            <button id="RemoveDevice" class="btn btn-danger ">Remove</button>
+          </div>
+        </div>
+      </div>
+<!-- control anolag and digital Chanels Form and Details -->
+    <!--anolagInputChanelsSection  -->
+<div class="col-md-11 deviceChanels" id="anolagInputChanelsSection">
+      <div class="col-md-6 d-flex flex-column deviceOption justify-content-around" >
+            <div class="row">
+                <div class="col-6">
+                  <!-- DeviceName -->
+                  <label for="#sensorName">نام حسگر</label>
+                  <input type="text" id="sensorName" placeholder="رطوبت سنج">
+                </div>
+                  <!-- EngineeringUnits -->
+                <div class="col-6">
+                  <label for="#EngineeringUnits">واحدهای مهندسی</label>
+                  <input type="text" id="EngineeringUnits" placeholder="C">
+                </div>
+            </div>
+            <div class="row">
+               <!-- minValueInput -->
+                <div class="col-6">
+                  <label for="#minValueInput">حداقل</label>
+                  <input type="text" id="minValueInput" placeholder="4">
+                </div>
+                <!-- maxValueInput -->
+                <div class="col-6">
+                  <label for="#maxValueInput">حداکثر</label>
+                  <input type="text" id="maxValueInput" placeholder="24">
+                </div>
+            </div>
+            <div class="row">
+               <!-- settingOffsetInput -->
+                <div class="col-6">
+                  <label for="#settingOffsetInput">تنظیم افست</label>
+                  <input type="text" id="settingOffsetInput">
+                </div>
+                <!-- valueNumberinput -->
+                <div class="col-6">
+                  <label for="#valueNumberinput">مقدار</label>
+                  <input type="text" id="valueNumberinput" placeholder="800">
+                </div>
+            </div>
+            <div class="row">
+               <!-- decimal -->
+              <div class="col-12">
+                  <label for="#decimal">تعداد اعشار</label>
+                  <input type="text" id="decimal" placeholder="0.000000">
+              </div>
+            </div>
+            <div class="row">
+               <!-- complexExampleMessage -->
+              <div class="col-12">
+                  <label for="#complexExampleMessage">توضیحات</label>
+                  <textarea class="form-control" id="complexExampleMessage" rows="3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In possimus quia natus magnam iure similique minima amet beatae consectetur voluptatibus.
+                  </textarea>    
+              </div>
+            </div>
+      </div>
+       <!-- imageBoxSensor -->
+      <div class="col-6 d-flex flex-column imageBoxSensor">
+        <div class="row" >
+          <!-- image of Device -->
+          <div class="col-12">
+             <img  class="img-rounded" style="width:100%; height:auto;" src="../../src/Image/mod-2i2o-2-digital-inputs-2-digital-outputs.jpg" alt="imageOfDevice">
+          </div>
+        </div>
+        <!-- button For Save And ReMove Chanels -->
+        <div class="row mt-3">
+              <!-- button For Save Chanels -->
+            <div class="col-6"> 
+              <button class="btn " id="saveAnolagInputChanel">ذخیره </button>
+            </div>
+            <!-- button For Remove Chanels -->
+            <div class="col-6"> 
+              <button class="btn " id="removeAnolaginputChanel" >انصراف </button>
+            </div>
+          
+        </div>
+      </div>
+</div>
+    <!--anolagOutPutChanelsSection  -->
+<div class="col-md-11 deviceChanels" id="anolagOutPutChanelsSection">
+      <div class="col-6 d-flex flex-column deviceOption justify-content-around" >
+            <div class="row">
+                <div class="col-6">
+                  <label for="#sensorName">نام حسگر</label>
+                  <input type="text" id="sensorName" placeholder="رطوبت سنج">
+                </div>
+                <div class="col-6">
+                  <label for="#EngineeringUnits">واحدهای مهندسی</label>
+                  <input type="text" id="EngineeringUnits" placeholder="C">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                  <label for="#minValueInput">حداقل</label>
+                  <input type="text" id="minValueInput" placeholder="4">
+                </div>
+                <div class="col-6">
+                  <label for="#maxValueInput">حداکثر</label>
+                  <input type="text" id="maxValueInput" placeholder="24">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                  <label for="#settingOffsetInput">تنظیم افست</label>
+                  <input type="text" id="settingOffsetInput" placeholder="111">
+                </div>
+                <div class="col-6">
+                  <label for="#valueNumberinput">مقدار</label>
+                  <input type="text" id="valueNumberinput" placeholder="800">
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                  <label for="#decimal">تعداد اعشار</label>
+                  <input type="text" id="decimal" placeholder="0.0000">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                  <label for="#complexExampleMessage">توضیحات</label>
+                  <textarea class="form-control" id="complexExampleMessage" rows="3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi veritatis aliquam itaque odit reiciendis nesciunt provident sunt, voluptatem quam earum, officiis cupiditate accusantium ipsam velit quisquam eos, sapiente fuga minima.
+                  </textarea>    
+              </div>
+            </div>
+      </div>
+      <div class="col-6 d-flex flex-column imageBoxSensor">
+        <div class="row" >
+          <div class="col-12">
+             <img  class="img-rounded" style="width:100%; height:auto;" src="../../src/Image/mod-2i2o-2-digital-inputs-2-digital-outputs.jpg" alt="imageOfDevice">
+          </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6"> 
+              <button class="btn " id="saveAnolagOutPutChanel">ذخیره </button>
+            </div>
+            <div class="col-6"> 
+              <button class="btn " id="removeAnolagOutPutChanel" >انصراف </button>
+            </div>
+        
+        </div>
+      </div>
+</div>
+    <!--DigitalInputChanelsSection  -->
+<div class="col-md-11 deviceChanels" id="DigitalInputChanelsSection">
+      <div class="col-6 d-flex flex-column deviceOption justify-content-around" >
+            <div class="row">
+                <div class="col-6">
+                  <label for="#sensorName">نام حسگر</label>
+                  <input type="text" id="sensorName" placeholder="دما سنج">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                  <label for="#minValueInput">نوع ورودی</label>
+                  <input type="text" id="minValueInput" placeholder="انولاگ اینپوت">
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                  <label for="#complexExampleMessage">توضیحات</label>
+                  <textarea class="form-control" id="complexExampleMessage" rows="3">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus iure fugiat corporis cumque laborum enim libero odio aliquid et animi, blanditiis velit nisi cupiditate odit nesciunt explicabo. Aliquid, recusandae explicabo.
+                  </textarea>    
+              </div>
+            </div>
+      </div>
+      <div class="col-6 d-flex flex-column imageBoxSensor">
+        <div class="row" >
+          <div class="col-12">
+             <img  class="img-rounded" style="width:100%; height:auto;" src="../../src/Image/mod-2i2o-2-digital-inputs-2-digital-outputs.jpg" alt="imageOfDevice">
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-6"> 
+              <button class="btn " id="saveDigitalInputChanel">ذخیره </button>
+            </div>
+            <div class="col-6"> 
+              <button class="btn " id="removeDigitalInputChanel" >انصراف </button>
+            </div>
+        
+        </div>
+      </div>
+</div>
+    <!--DigitalOutPutChanelsSection  -->
+<div class="col-md-11 deviceChanels" id="DigitalOutPutChanelsSection">
+      <div class="col-6 d-flex flex-column deviceOption justify-content-around" >
+            <div class="row">
+                <div class="col-6">
+                  <label for="#sensorName">نام حسگر</label>
+                  <input type="text" id="sensorName" placeholder="روشنایی">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                  <label for="#minValueInput">نوع ورودی</label>
+                  <input type="text" id="minValueInput" placeholder="ورودی دیجیتال">
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                  <label for="#complexExampleMessage">توضیحات</label>
+                  <textarea class="form-control" id="complexExampleMessage" rows="3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint vel officiis a obcaecati alias doloribus totam animi minus aspernatur odio non ea accusamus iste aut enim, nisi atque quisquam harum?
+                  </textarea>    
+              </div>
+            </div>
+      </div>
+      <div class="col-6 d-flex flex-column imageBoxSensor">
+        <div class="row" >
+          <div class="col-12">
+             <img  class="img-rounded" style="width:100%; height:auto;" src="../../src/Image/mod-2i2o-2-digital-inputs-2-digital-outputs.jpg" alt="imageOfDevice">
+          </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-6"> 
+              <button class="btn " id="saveDigitalOutPutChanel">ذخیره </button>
+            </div>
+            <div class="col-6"> 
+              <button class="btn " id="removeDigitalOutPutChanel" >انصراف </button>
+            </div>
+          
+        </div>
+      </div>
+</div>
+
+</div>
+</div>
+
+<!-- import Script we need for Bootstrap -->
+    <script src="../js/minFilleJavaScripts/jquery-3.6.1.min.js"></script>
+    <script src="../js/minFilleJavaScripts/popper.min.js"></script>
+    <script src="../js/minFilleJavaScripts/bootstrap.bundle.min.js"></script>
+<!-- Create A module Scripts for other js files -->
+    <script type="module"  src="../js/javaScriptFileMenu/Main.js"></script>
+</body>
+</html>
+
+
+<!-- KianNosratian-->
+<!-- WebDeveloper-->
+<!--  -->

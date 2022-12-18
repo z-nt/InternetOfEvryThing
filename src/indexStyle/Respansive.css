@@ -1,0 +1,187 @@
+@import url("./base.css");
+/* Respansive Style for TabLet Mobile And Desktop */
+/* style Section Home */
+@media screen and (max-width:1300px) {
+    nav{
+        border: none;
+        height: 4rem;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        background-color: #100720;
+    }
+    nav .navbar-toggler{
+        background-color: #100720;
+        width: 3rem;
+        text-align: center;
+        align-items: center;
+        padding: 0.4rem;
+        top: 15%;
+        right: 5%;
+        position: absolute;
+
+    }
+    nav #navbarText{
+        border: none;
+        background-color: #100720;
+        margin: 0%;
+        box-sizing: border-box;
+        text-align: right;
+        top: -0.5rem;
+        width: 100%;
+    }
+    #Home{
+        border: none;
+        background-color:#100720;
+        z-index: 1;
+    } 
+    #Home #mainHolder{
+        border: none ;
+        display: flex;
+        flex-direction: column;
+    }
+    #Home #mainHolder .main{
+        border: none;
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+        border: none;
+    }
+    #Home #mainHolder .Phone {
+        border: none;
+        position: relative;
+        height: 100%;
+        display: none;
+    }
+   
+    #Home .IotItems{
+        display: none;
+    }
+}
+/* End Style */
+
+
+/* Respansive introduction  */
+@media screen and (max-width:910px){
+   
+   #SectionInformation .brnadHeader{
+    border:none;
+   }
+   #SectionInformation .brnadHeader h2 {
+    border: none;
+    width: 100%;
+    line-height: 1.5;
+    font-family: cursive;
+   }
+}
+
+/* Respansive introductionEnd   */
+
+/* Respansive Visualise */
+@media screen and (max-width:910px){
+   #SectionInformation #VisualiseRow{
+        border: none;
+        transform: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100%;
+        margin: 0%;
+        box-sizing: border-box;
+        align-items: flex-start;
+
+    }
+    #SectionInformation #VisualiseRow .informationBox{
+        border: none;
+        transform: none;
+        position: relative;
+        z-index: 1;
+        text-align: left;
+    }
+    #SectionInformation #VisualiseRow .Childone{
+        text-align: left;
+    }
+    #SectionInformation #VisualiseRow .ChildTow{
+        border: none ;
+        position: relative;
+        top: 0%;
+        margin: 0%;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+/* Respansive VisualiseEnd  */
+
+/* Product Respansive Style */
+@media screen and (max-width:910px){
+    #ProductSection .card {
+        height: 65vh;
+        max-width: none;
+        margin: 1rem auto;
+        max-height: none;   
+    }
+    #ProductSection .row .card .card-body .card-icons  div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+
+/* Product Respansive StyleEnd */
+
+
+
+
+
+/* Footer Respanisve  */
+@media screen and (max-width:910px){
+    #footer{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    #footer .row{
+        text-align: center;
+        display:flex ;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    #footer .row button{
+        text-align: center;
+        width: 70%;
+        position: relative;
+    }
+    #footer .row .footerBrand{
+        text-align: center;
+    }
+    #footer .row .footerMenu{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer .row .Iotyears{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #footer .row .iconLinkMenu{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+    }
+}
+/* Footer RespanisveEnd  */

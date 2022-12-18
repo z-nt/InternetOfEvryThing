@@ -1,0 +1,91 @@
+/* ImPortCssStyle */
+@import url("./AnimationWiget.css");
+@import url("./Chart.css");
+@import url("./CheckAir.css");
+@import url("./menu.css");
+@import url("./myDivce.css");
+@import url("./objectionStyle.css");
+@import url("./TankWaterLevel.css");
+@import url("./Termametor.css");
+@import url("./WigetHoder.css");
+@import url("./Tags.css");
+/*EndImPortCssStyle */
+/* ComponentCss import */
+@import url("../ComponentCss/Tags.css");
+@import url("../ComponentCss/comboBoxStyle.css");
+/* End ImportCoumponent */
+:root{
+    --backgroundColor : #100720;
+    --fontHeader-Size:2rem;
+    --fontPragraphSize:1rem;
+    --font-Color:#FFFFFF;
+    --font-Weight-bold:500;
+    --btnBackground:#472183;
+    --card-BoxSHoadow:0px 4px 8px 0px #82C3EC;
+    --paragraphColor:#D9D9D9;
+    --labelSize:0.9rem;
+    --inputBackground:#33363F;
+    --cardButtonColor : #82C3EC;
+    --LineHeight:1.5;
+    --buttonFontSize:1.3rem;
+    --headerSixFontSize:0.8rem;
+    --IoTMobileParaColor:#181D31;
+    --inputCheckBackground :#33363F;
+    --IotMobilColor:#FAF8F1;
+    --activeBorder:#d19b3d;
+  }
+
+
+#wigetHolder #informataionDevice{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    margin: 4rem auto;
+    direction: rtl;
+}
+
+
+#wigetHolder #informataionDevice form{
+    border: none;
+    border-radius: 0.2rem;
+    background-color:var(--font-Color);
+    box-shadow: 0px 0px 4px 0px #353763;
+}
+
+#wigetHolder #informataionDevice form label{
+    position: relative;  
+    font-size: 1.2rem;
+    color: #353763;
+    font-weight: 600;  
+    line-height: 10px; 
+    margin: 0.4rem 0.3rem;
+    text-align: right;
+    height: 2rem;
+    align-items: center;
+    display: flex;
+}
+#wigetHolder #informataionDevice form input{
+    background-color:var(--inputBackground);
+        color: var(--font-Color);
+        border-radius: 0.2rem;
+        font-size: 1rem;
+        font-weight: 400;
+        padding: .5rem;
+        margin: 0.2rem 0.2rem;
+        box-sizing: border-box;
+        border: none;
+        width: 70%;
+}
+#wigetHolder #informataionDevice form input::placeholder{
+    color: var(--font-Color);
+}
+
+
+#wigetHolder #informataionDevice form .btn{
+    border: 1px soloid red ;
+    background-color: var(--btnBackground);
+    color: var(--font-Color);
+}
+#wigetHolder #informataionDevice form #removeFormInformation{
+    background-color: rgb(255, 72, 0);
+}

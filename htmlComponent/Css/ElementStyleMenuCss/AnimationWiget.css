@@ -1,0 +1,280 @@
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  
+  .lumpElement::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 45vh;
+    -webkit-box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+            box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+    z-index: -1;
+    -webkit-animation-name: yellow-shadow;
+            animation-name: yellow-shadow;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    /* border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px; */
+  }
+  
+  .lumpElement::after {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 45vh;
+    -webkit-box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+            box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+    z-index: -1;
+    -webkit-animation-name: cyan-shadow;
+            animation-name: cyan-shadow;
+    -webkit-animation-timing-function: ease;
+            animation-timing-function: ease;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    /* border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px; */
+  }
+  
+ 
+  @-webkit-keyframes yellow-shadow {
+    0% {
+transform: scale(1);    
+    }
+    /* 25% {
+      top: 50%;
+      left: 0;
+    }
+    50% {
+      top: 50%;
+      left: 50%;
+    }
+    75% {
+      top: 0;
+      left: 50%;
+    } */
+    100% {
+     transform: scale(2);
+    }
+  }
+  
+  @keyframes yellow-shadow {
+    0% {
+        transform: scale(1);    
+            }
+            /* 25% {
+              top: 50%;
+              left: 0;
+            }
+            50% {
+              top: 50%;
+              left: 50%;
+            }
+            75% {
+              top: 0;
+              left: 50%;
+            } */
+            100% {
+             transform: scale(2);
+            }
+  }
+  
+  @-webkit-keyframes cyan-shadow {
+    0% {
+        transform: scale(1);    
+            }
+            /* 25% {
+              top: 50%;
+              left: 0;
+            }
+            50% {
+              top: 50%;
+              left: 50%;
+            }
+            75% {
+              top: 0;
+              left: 50%;
+            } */
+            100% {
+             transform: scale(2);
+            }
+  }
+  
+  @keyframes cyan-shadow {
+    0% {
+        transform: scale(1);    
+            }
+            /* 25% {
+              top: 50%;
+              left: 0;
+            }
+            50% {
+              top: 50%;
+              left: 50%;
+            }
+            75% {
+              top: 0;
+              left: 50%;
+            } */
+            100% {
+             transform: scale(2);
+            }
+  }
+  
+  @-webkit-keyframes gradient-shadow {
+    0% {
+      -webkit-box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+              box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+    }
+    20% {
+      -webkit-box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+              box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+    }
+    40% {
+      -webkit-box-shadow: 0 0 17px 3px #0f0,0 0 4px 2px #0f0;
+              box-shadow: 0 0 17px 3px #0f0,0 0 4px 2px #0f0;
+    }
+    60% {
+      -webkit-box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+              box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+    }
+    80% {
+      -webkit-box-shadow: 0 0 17px 3px #f00,0 0 4px 2px #f00;
+              box-shadow: 0 0 17px 3px #f00,0 0 4px 2px #f00;
+    }
+    100% {
+      -webkit-box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+              box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+    }
+  }
+  
+  @keyframes gradient-shadow {
+    0% {
+      -webkit-box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+              box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+    }
+    20% {
+      -webkit-box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+              box-shadow: 0 0 17px 3px #0ff,0 0 4px 2px #0ff;
+    }
+    40% {
+      -webkit-box-shadow: 0 0 17px 3px #0f0,0 0 4px 2px #0f0;
+              box-shadow: 0 0 17px 3px #0f0,0 0 4px 2px #0f0;
+    }
+    60% {
+      -webkit-box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+              box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+    }
+    80% {
+      -webkit-box-shadow: 0 0 17px 3px #f00,0 0 4px 2px #f00;
+              box-shadow: 0 0 17px 3px #f00,0 0 4px 2px #f00;
+    }
+    100% {
+      -webkit-box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+              box-shadow: 0 0 17px 3px #C586C0,0 0 4px 2px #C586C0;
+    }
+  }
+  
+  @-webkit-keyframes half-yellow-shadow {
+    0% {
+        transform: scale(1);    
+            }
+            /* 25% {
+              top: 50%;
+              left: 0;
+            }
+            50% {
+              top: 50%;
+              left: 50%;
+            }
+            75% {
+              top: 0;
+              left: 50%;
+            } */
+            100% {
+             transform: scale(2);
+            }
+  }
+  
+  @keyframes half-yellow-shadow {
+    0% {
+        transform: scale(1);    
+            }
+            /* 25% {
+              top: 50%;
+              left: 0;
+            }
+            50% {
+              top: 50%;
+              left: 50%;
+            }
+            75% {
+              top: 0;
+              left: 50%;
+            } */
+            100% {
+             transform: scale(2);
+            }
+    }
+  
+  
+  @-webkit-keyframes half-cyan-shadow {
+    0% {
+        transform: scale(1);    
+            }
+            /* 25% {
+              top: 50%;
+              left: 0;
+            }
+            50% {
+              top: 50%;
+              left: 50%;
+            }
+            75% {
+              top: 0;
+              left: 50%;
+            } */
+            100% {
+             transform: scale(2);
+            }
+  }
+  
+  @keyframes half-cyan-shadow {
+    0% {
+        transform: scale(1);    
+            }
+            /* 25% {
+              top: 50%;
+              left: 0;
+            }
+            50% {
+              top: 50%;
+              left: 50%;
+            }
+            75% {
+              top: 0;
+              left: 50%;
+            } */
+            100% {
+             transform: scale(2);
+            }
+  }
+
+
+

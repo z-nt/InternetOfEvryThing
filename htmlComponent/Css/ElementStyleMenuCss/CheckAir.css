@@ -1,0 +1,55 @@
+
+
+
+#wigetHolder li#Timer{
+min-width: 450px;
+min-height: 200px;
+
+}
+
+
+
+.boxMan {
+  border-radius: 10px;
+}
+
+.timerDisplay {
+  position: relative;
+  font-family: 'Roboto mono', monospace;
+  color: #0f0;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 139, 253, 0.25);
+  padding: 1rem;
+}
+
+.buttons {
+  width: 100%;
+  margin: 60px auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons button {
+  width: 120px;
+  height: 45px;
+  background-color: #1A374D;
+  color: #0ff;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.buttons button:nth-last-child(2) {
+  background-color: #1A374D;
+}
+
+.buttons button:nth-last-child(1) {
+  background-color: #1A374D;
+}

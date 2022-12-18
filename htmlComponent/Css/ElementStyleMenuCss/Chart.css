@@ -1,0 +1,41 @@
+
+  
+ 
+  
+  .graph {
+    background-color: #383838;
+    font-size: 14px;
+    height: 50%;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  
+  .graph svg {
+    overflow: visible;
+  }
+  .domain {
+    display: none;
+  }
+  .tick {
+    shape-rendering: "crispEdges";
+    stroke: #fff;
+    stroke-width: 1px;
+  }
+  .graph-val {
+    text-anchor: end;
+  }
+  
+  text {
+    fill: #fff;
+  }
+  
+  .line {
+    fill: none;
+    stroke-width: 3px;
+    vector-effect: non-scaling-stroke;
+  }
+  
+  .area {
+    vector-effect: non-scaling-stroke;
+  }
+  

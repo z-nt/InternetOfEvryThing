@@ -1,0 +1,103 @@
+@import url("./anolaginput.css");
+@import url("./anolagInPutChenl.css");
+@import url("./anolagOutput.css");
+@import url("./AnolagOutPutChanel.css");
+@import url("./digitalInput.css");
+@import url("../ComponentCss/DigitalInputChanel.css");
+@import url("./digitaloutput.css");
+@import url("../ComponentCss/DigitalOutPutChanel.css");
+@import url("../NewDevice.css/newDevice.css");
+:root{
+    --backgroundColor : #100720;
+    --fontHeader-Size:2rem;
+    --fontPragraphSize:1rem;
+    --font-Color:#FFFFFF;
+    --font-Weight-bold:500;
+    --btnBackground:#472183;
+    --card-BoxSHoadow:0px 4px 8px 0px #82C3EC;
+    --paragraphColor:#D9D9D9;
+    --labelSize:0.9rem;
+    --inputBackground:#33363F;
+    --cardButtonColor : #82C3EC;
+    --LineHeight:1.5;
+    --buttonFontSize:1.3rem;
+    --headerSixFontSize:0.8rem;
+    --IoTMobileParaColor:#181D31;
+    --inputCheckBackground :#33363F;
+    --IotMobilColor:#FAF8F1;
+    --activeBorder:#d19b3d;
+  }
+
+
+
+#wigetHolder .comboBox {
+    position: relative;
+    margin: 2rem auto;
+    width: 90%;
+    display: none;
+    flex-direction: column;
+    border: 1px solid black ;
+    font-family: cursive;
+}
+#wigetHolder .comboBox .row{
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+#wigetHolder .comboBox .IO_AD{
+    width: 100%;
+    height: 90%;
+    display: "none";
+}
+
+#wigetHolder .comboBox   .brandCombo{
+    position: relative;
+    margin: 0.5rem auto;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    z-index: 11111;
+    height: 3rem;
+    background-color: var(--backgroundColor);
+    border-radius: 0.2rem;
+    color: var(--font-Color);
+    
+}
+#wigetHolder .comboBox .row h4{
+border: none;
+text-align: right;
+}
+
+#wigetHolder .comboBox #butonHolder{
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    z-index: 999;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    position: relative;
+    margin: 1rem .4rem;
+}
+#wigetHolder .comboBox .row .btn{
+    width: 100%;
+    background-color: var(--btnBackground);
+    color: var(--font-Color);
+    font-weight: 500;
+    transition: 0.2s all ease-in-out;
+    border: none;
+}
+#wigetHolder .comboBox .row .btn:hover{
+    background-color: #353763;
+    color: var(--font-Color);
+}
+
+#wigetHolder .comboBox .row #RemoveDevice{
+    background-color: #850000;
+    color: var(--font-Color);
+
+}
+

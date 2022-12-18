@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "draggable": "^4.2.0",
+    "interactjs": "^1.10.17",
+    "three-gltf-loader": "^1.111.0",
+    "three.js": "^0.77.0"
+  }
+}

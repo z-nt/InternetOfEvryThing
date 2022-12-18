@@ -1,0 +1,798 @@
+@import url("./base.css");
+/* import Css Base */
+nav{
+   z-index: 9999;
+   margin: 0%;
+   box-sizing: border-box;
+   background-color: var(--backgroundColor);
+}
+
+nav .navbar-brand{
+    font-size: 2rem;
+    color: var(--font-Color);
+    font-weight: 500;
+    font-family: cursive;
+    padding-left: 1.2rem;
+}
+
+nav  .navbar-nav .nav-item .nav-link{
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--font-Color);
+    font-weight: 400;
+    font-family: cursive;
+}
+
+#mainHolder{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#mainHolder .main{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    align-items: left;
+}
+
+#mainHolder .main h1{
+    color: var(--font-Color);
+    font-family: cursive;
+    text-align: center;
+    font-weight: 400;
+    margin: 1rem auto;
+}
+
+#mainHolder .main p{
+color: var( --paragraphColor);
+font-family: cursive;
+text-align: center;
+font-weight: 400;
+margin: 1rem auto;
+}
+
+
+#mainHolder .main #btnStarted{
+    margin: 1rem auto;
+    position: relative; 
+    display: inline-block;
+    max-height: 3rem;
+}
+
+
+
+#mainHolder .main #btnStarted button {
+    background-color: var(--font-Color);
+    color: var(--backgroundColor);
+    font-weight: bold;
+    font-family: cursive;
+    font-size: var(--buttonFontSize);
+    transition: all ease-in 0.2s;
+}
+#mainHolder .main #btnStarted button:hover{
+    background-color:var(--btnBackground);
+    color: var(--font-Color);
+    box-shadow: var(--card-BoxSHoadow);
+}
+
+/* mobile Style Css*/
+.Mobil{
+border: 1px solid #FAF8F1 ;
+position: absolute;
+height: 100%;
+max-height: 9
+0%;
+width:auto ;
+margin: 1rem auto;
+border-radius: 5%;
+background-color: #FAF8F1;
+box-shadow:var(--card-BoxSHoadow);
+}
+
+
+.Mobil .glass{
+    border: 1px solid #181D31 ;
+    background-color: #181D31;
+    width: 98%;
+    height: 93%;
+    position: relative;
+    margin: 1rem auto;
+    border-radius: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Mobil .Camera {
+    border: none ;
+    width: 65%;
+    height: 1.7rem;
+    right: 17%;
+    top: .5rem;
+    position: absolute;
+    z-index: 1;
+    border-radius: 0.4rem;
+    background-color: #FAF8F1;
+}
+
+.glass h4,h5,p {
+    margin: .3rem auto;
+    color: #FAF8F1;
+    font-weight: 400;
+    font-family: cursive;
+}
+.glass .row .glass-menu{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 1rem auto;
+    justify-content: left;   
+    text-align: left;
+    direction: rtl;
+}
+
+.glass .glass-item{
+    list-style-type: none;
+    text-decoration: none;
+    color: #FAF8F1;
+    font-weight: 300;
+    font-family: cursive;
+    width: 4rem;
+    margin-left: .4rem;
+    border: none ;
+}
+
+
+.glass .glass-item .glass-link{
+    text-decoration: none;
+    color: #FAF8F1;
+    font-size: .7rem;
+    text-align: left;
+    border: none;
+}
+
+.row .iotMobileIcon{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+    height: 100px;
+    background-color: #FAF8F1;
+    padding: 0%;
+    border-radius: 0.5rem;
+    box-shadow: var(--card-BoxSHoadow);
+}
+
+.row .iotMobileIcon i{
+    font-size: 1.3rem;
+    color: var(--backgroundColor);
+    position: absolute;
+    top: -1rem;
+    left: 1rem;
+    border: none;
+    width: 1rem;
+    height: 1rem;
+}
+.row .iotMobileIcon h6{
+    color: var(--backgroundColor);
+    font-size: var(--headerSixFontSize);
+    position: absolute;
+    top: 1.5rem;
+    left: 0.4rem;
+    font-weight: 500;
+}
+.row .iotMobileIcon p{
+    color: var(--IoTMobileParaColor);
+    font-size: 0.6rem;
+    position: absolute;
+    top: 2rem;
+    text-align: left;
+    font-weight: 400;
+}
+.row .iotMobileIcon .inputCheck{
+    background-color: var(--inputCheckBackground);
+    color: var(--IotMobilColor);
+    width: 2.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 4.4rem;
+    line-height: 10px;
+    border-radius: 0.6rem;
+    border: none;
+    left: 0.4rem;
+}
+.row .iotMobileIcon .inputCheck .circleButton{
+ border: none;
+ width: 1.5rem;
+ height: 1.5rem;  
+ border-radius: 50%;
+ background-color: var(--IotMobilColor); 
+ position: absolute;
+ left: 0%;
+ cursor: pointer;
+ transition: all 0.4s ease-in-out;
+}
+
+.changePosition{
+   transform: translateX(15px);
+}
+/*End mobile Style Css */
+
+/* backgroundClip Styles */
+#Home .background-clip{
+    border:none;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+}
+/* backgroundClip StylesEnd */
+
+
+
+
+/* SectionInformtion Style */
+#SectionInformation{
+    width: 100%;
+    background-color: var(--font-Color);
+    border: none;
+    margin: 0%;
+    box-sizing: border-box;
+}
+#SectionInformation .brnadHeader h2 {
+    width: 50%;
+    position: relative;
+    margin: 3rem auto;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+
+#SectionInformation .container-fluid{
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#SectionInformation .container-fluid .row{
+    margin: 0.4rem auto;
+}
+/* styelBox information */
+#SectionInformation .container-fluid .row .informationBox{
+    text-align: left;
+    color: var(--backgroundColor);
+    font-family: cursive;
+}
+/* Text boxes Styles informations */
+#SectionInformation .container-fluid .row .informationBox h1{
+    line-height: 1.5;
+}
+#SectionInformation .container-fluid .row .informationBox p{
+    color: var(--IoTMobileParaColor);
+}
+#SectionInformation .container-fluid .row .informationBox .readMoreButton{
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 30%;
+    text-decoration: none;
+    color: var(--btnBackground);
+    cursor: pointer;
+}
+/* End It */
+
+/* image boxes style */
+.informationBox .images{
+    max-height: 400px;
+    height: 350px;
+    position: relative;
+    text-align: center;
+    border: none;
+}
+
+.informationBox .images img{
+    box-shadow: var(--card-BoxSHoadow);
+    border: none;
+}
+
+
+.informationBox .images .imageBox{
+    width: 17em;
+    height: 17rem;
+    position: absolute;
+    box-shadow: var(--card-BoxSHoadow);
+    background-color: var(--font-Color);
+}
+
+.informationBox .images .imageOne{
+    left: 5rem;
+    top: 1rem;
+
+}
+
+.informationBox .images .imageTow{
+left: 7rem;
+top: 2rem;
+}
+
+.informationBox .images .imageTree{
+    left: 9rem;
+    top: 3rem;
+}
+/*End image boxes style */
+/* collect Style */
+.informationBox .collectForm{
+    position: relative;
+    margin: 1rem auto;
+    width: 90%;
+    max-height: 400px;
+    height: 400px;
+    border: none;
+    color: var(--backgroundColor);
+}
+.informationBox .collectForm .card {
+    max-height: 370px;
+    border: none;
+    border-radius: 0.2rem;
+    position: relative;
+    left: 4rem;
+    top: 1rem;
+    z-index: 2;
+    background-color: var(--IotMobilColor);
+    box-shadow: var(--card-BoxSHoadow);
+}
+.informationBox .collectForm .card .card-menu{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    position: relative;
+    text-align: left;
+    align-items:flex-end;
+}
+.informationBox .collectForm .card .card-menu .card-items{
+    list-style-type: none;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+.informationBox .collectForm .card .card-menu .card-items .card-link{
+    text-decoration: none;
+    color: var(--backgroundColor);
+}
+/* inputs collectStyle */
+.informationBox .inputsCollect label{
+    color: var(--backgroundColor);
+    font-size: 0.9rem;
+}
+.informationBox .inputsCollect input{
+    padding: 0.3rem;
+    margin: 0.2rem;
+    border-radius: 0.2rem;
+    width: 60%;
+    height: 1.3rem;
+    border: none;
+    background-color: var(--inputBackground);
+    color: var(--font-Color);
+}
+.informationBox .inputsCollect input.submit{
+    border: none ;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    background-color: var(--btnBackground);
+    color: var(--IotMobilColor);
+    padding: 0.3rem;
+    height: 2rem;
+}
+ 
+.informationBox .collectForm #cardCheckInputs{
+    border: none;
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    z-index: 1;
+}
+/* inputs collectStyle End*/
+/*End_collect Style */
+/* VisualiseStyle */
+#SectionInformation  #VisualiseRow{
+    border: none;
+    border-radius: 0 ;
+    background: rgb(3,7,23);
+    background: linear-gradient(54deg, rgba(3,7,23,1) 0%, rgba(16,7,32,1) 100%);
+    padding: 20px 0;
+    margin-top: -20px;
+    transform: skew(0deg, -3deg);
+    position: relative;
+    height: 400px;
+    text-align: right;
+    align-items: center;
+    display: flex;
+    z-index: 1;
+
+}
+#SectionInformation  #VisualiseRow .informationBox{
+    border: none;
+    position: absolute;
+    transform: skew(0deg, 3deg);
+}
+
+#SectionInformation  #VisualiseRow .Childone{
+    left: 0%;
+}
+#SectionInformation  #VisualiseRow .ChildTow{
+    right: 0%;
+    position: absolute;
+    z-index: 1;
+    top: 5rem;
+}
+#SectionInformation  #VisualiseRow .ChildTow .card{
+    box-shadow: var(--card-BoxSHoadow);
+}
+#SectionInformation  #VisualiseRow .ChildTow .card .card-header{
+    position: relative;
+    top: 0%;
+    left: 0%;
+    margin: 0% ;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: var(--backgroundColor);
+    color: var(--font-Color);
+}
+#SectionInformation  #VisualiseRow .ChildTow .card .submit{
+    border: none ;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    background-color: var(--btnBackground);
+    color: var(--IotMobilColor);
+    padding: 0.3rem;
+    height: 2rem;
+    border-radius: 0.2rem;
+}
+
+
+
+
+/* VisualiseStyleEnd */
+/* LastInfotmation Box */
+#SectionInformation  .informationBox .images #microImage{
+    border: none;
+    width: 70%;
+    height:100%;
+    z-index: 1;
+    border: none;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+}
+/* end MicroServices style */
+/* Product_Section_style */
+#ProductSection{
+    border: none;
+    width: 100%;
+    position: relative;
+}
+#ProductSection .Product-header{
+border: none;
+background-color: var(--backgroundColor);
+margin-top: 4rem;
+height: 30%;
+align-items: center;
+text-align: center;
+display: flex;
+transform: skew(0deg,-4deg);
+}
+#ProductSection .card {
+    height: 75vh;
+    box-shadow: -2px 14px 19px -1px rgba(0,0,0,0.67);
+    -webkit-box-shadow: -2px 14px 19px -1px rgba(0,0,0,0.67);
+    -moz-box-shadow: -2px 14px 19px -1px rgba(0,0,0,0.67);    border-radius: 0.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    max-width: 53vh;
+}
+#ProductSection .card:hover{
+    background-color: var(--backgroundColor);
+    color: var(--font-Color);
+}
+#ProductSection .card:hover .card-body .card-button a{
+    color: var(--cardButtonColor);
+}
+
+#ProductSection .card .card-body{
+    border: none ;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+#ProductSection .card .card-body .card-icons{
+    border: none;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 4rem;
+}
+#ProductSection .card .card-body .card-button{
+    border: none;
+    margin: 1rem auto;
+    text-align: center;
+}
+#ProductSection .card .card-body .card-button a {
+    text-decoration: none;
+    color: var(--backgroundColor);
+    font-weight:bold;
+}
+/* Product_Section_style End */
+
+
+/* secton slide style */
+#sliderSection{
+    border: none;
+    width: 100%;
+    position: relative;
+    background-color: var(--backgroundColor);
+}
+#sliderSection  #carouselExampleCaptions{
+    border: none ;
+    margin: 1rem auto;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+#sliderSection  #carouselExampleCaptions 
+.carousel-inner .carousel-item .items-slide{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: left;
+    max-height: 400px;
+    height: 400px;
+}
+
+#sliderSection  #carouselExampleCaptions 
+.carousel-inner .carousel-item .items-slide h1,p,button{
+    border: none ;
+    color: var(--font-Color);
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: cursive;
+}
+
+
+#sliderSection  #carouselExampleCaptions 
+.carousel-inner .carousel-item .items-slide button{
+    width: 30%;
+    padding:0.4rem ;
+    background-color: var(--btnBackground);
+    color: var(--font-Color);
+}
+
+
+
+
+#sliderSection  #carouselExampleCaptions 
+.carousel-inner .carousel-item .image-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#sliderSection  #carouselExampleCaptions 
+.carousel-inner .carousel-item .image-Slide img{
+    border: none ;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+/* secton slide styleEnd */
+/* Section Rule Style */
+#IotRuleSection{
+    position: relative;
+    width: 100%;
+    background-color: var(--IotMobilColor);
+}
+
+#IotRuleSection .RuleItems{
+    height: 80vh;
+    position: relative;
+}
+#IotRuleSection .Rule-Text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+ 
+}
+#IotRuleSection .Rule-Text h1,p,button{
+    color: var(--backgroundColor);
+    font-family: cursive;
+    line-height: 1.5;
+}
+#IotRuleSection .Rule-Text button{
+    background-color: var(--btnBackground);
+    width: 30%;
+    color: var(--IotMobilColor);
+    padding: 0.3rem;
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+}
+#IotRuleSection .Rule-video{
+     display: flex;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+
+    }
+
+#IotRuleSection .Rule-video video{
+    width: 90%;
+    height: 100%;
+}
+/* Section Rule StyleEnd */
+
+
+/* section CardList Style */
+#cardListSection {
+    width: 100%;
+    position: relative;
+    margin-top: 1rem;
+}
+#cardListSection .skewItems{
+    width: 100%;
+    height: 20rem;
+    position: absolute;
+    transform: skew(0deg,-3deg);
+    margin: 0%;
+}
+#cardListSection .card{
+    z-index: 1;
+    position: relative;
+    background-color: var(--IotMobilColor);
+    box-shadow: -2px 14px 19px -1px rgba(0,0,0,0.67);
+    -webkit-box-shadow: -2px 14px 19px -1px rgba(0,0,0,0.67);
+    -moz-box-shadow: -2px 14px 19px -1px rgba(0,0,0,0.67);    border-radius: 0.2rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 30vh;
+}
+#cardListSection .card h4,p,i{
+margin: 1rem;
+line-height: 1.5;
+}
+#cardListSection .card i{
+    font-size: 2rem;
+    color: var(--cardButtonColor);
+    width: 2rem;
+    height: 2rem;
+}
+/* section CardList Style  End*/
+
+
+#footer{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background-color: var(--backgroundColor);
+}
+#footer button{
+    background-color: var(--btnBackground);
+    color: var(--font-Color);
+    font-size: var(--buttonFontSize);
+}
+#footer hr{
+    color: #FAF8F1;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+
+
+#footer .footerMenu{
+    height: 100%;
+    position: relative;
+    text-align: right;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#footer .footerMenu .footerMenuItems{
+list-style-type: none;
+cursor: pointer;
+margin: 1rem auto;
+text-align: center;
+display: flex;
+}
+
+#footer .footerMenu .footerMenuItems .footerItemsLink{
+text-decoration: none;
+color: var(--IotMobilColor);
+font-size: 1.2rem;
+font-weight: bold;
+font-family: cursive;
+}
+#footer .footerBrand{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    height: 5rem;
+}
+#footer .footerBrand a {
+text-decoration: none;
+color: var(--IotMobilColor);
+font-size: 1.2rem;
+font-weight: bold;
+font-family: cursive;
+line-height: 1.5;
+}
+
+#footer .iconLinkMenu{
+    height: 100%;
+    position: relative;
+    text-align: right;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+#footer .iconLinkMenu .iconLink{
+list-style-type: none;
+cursor: pointer;
+text-align: center;
+display: flex;
+font-size: 2rem;
+color: var(--btnBackground);
+width: 4rem;
+margin-right: 0.5rem;
+}
+
+
+#footer .Iotyears{
+    display: flex;
+    list-style-type: none;
+    line-height: 1.5;
+    align-items: center;
+    color: var(--btnBackground);
+    height: 5rem;
+    font-family: cursive;
+
+}
+#footer .Iotyears i {
+    width: 10%;
+    position: relative;
+
+}

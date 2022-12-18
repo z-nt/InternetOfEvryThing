@@ -1,0 +1,68 @@
+/* import ather Styles */
+@import url("./section.css");
+/* Home Style */
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    width: 100%;
+    position: relative;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+}
+/* Section Style */
+#Home{
+    width: 100%;
+    position: relative;
+    top: 0%;
+    height: 100vh;
+    background-color: #100720b9;
+    overflow: hidden;
+    }
+
+
+#Home .IotItems{
+width: 4rem;
+height: 4rem;
+border-radius: 50%;
+background-color: #ffffff73;
+display: flex;
+text-align: center;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+margin: 2rem;
+float: right;
+mix-blend-mode: difference;
+position: absolute;
+}
+#Home .IotItems:hover{
+    box-shadow: 0px 4px 8px 0px #82C3EC;
+    transform: scale(1.1);
+    background-color: #472183;
+}
+
+
+.iotItemsIcon{
+    top: 0%;
+    left: 0%;
+    border: none ;
+    width: 3rem;
+    height: 3rem;
+    margin: 0.5rem;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color:#FAF8F1 ;
+}
+.iotItemsIcon i{
+   font-size: 1.5rem;
+    margin: 10px auto;
+    color: #100720;
+}

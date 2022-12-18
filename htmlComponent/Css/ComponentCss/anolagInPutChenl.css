@@ -1,0 +1,114 @@
+@import url("./comboBoxStyle.css");
+#wigetHolder #anolagInputChanelsSection{
+  position: relative;
+  margin: 1rem auto;
+  box-sizing: border-box;
+  width: 90%;
+  direction: rtl;
+  display: none;
+  border: 1px solid #ccc;
+  background-color: var(--IotMobilColor);
+  border-radius: 0.2rem;
+}
+
+#wigetHolder #anolagInputChanelsSection .deviceOption{
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+#wigetHolder #anolagInputChanelsSection 
+.deviceOption .row{
+  position: relative;
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border:var(--IotMobilColor);
+  background-color:var(--IotMobilColor);
+}
+
+#wigetHolder #anolagInputChanelsSection
+ .deviceOption .row label{
+  position: relative;  
+  font-size:1rem;
+  color: var(--backgroundColor);
+  font-weight: bold;  
+  line-height: 1.5; 
+  margin: 0.4rem 0.3rem;
+  text-align: right;
+  height: 2rem;
+  align-items: center;
+  display: flex;
+}
+
+#wigetHolder #anolagInputChanelsSection 
+.deviceOption .row input{
+        background-color: var(--inputCheckBackground);
+        color: var(--font-Color);
+        border-radius: 0.2rem;
+        font-size: 1rem;
+        font-weight: 500;
+        width: 90%;
+        height: 2rem;
+        box-sizing: border-box;
+        border: none;
+      }
+      #wigetHolder #anolagInputChanelsSection 
+      .deviceOption .row input::placeholder{
+        color: var(--font-Color);
+        font-size: var(--buttonFontSize);
+        padding-right: 0.5rem;
+      }
+
+
+      #wigetHolder #anolagInputChanelsSection  .imageBoxSensor{
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+      #wigetHolder #anolagInputChanelsSection  .imageBoxSensor .row{
+        position: relative;
+        border: none;
+        display: flex;
+      }
+     
+      #wigetHolder #anolagInputChanelsSection 
+       .imageBoxSensor .row #saveAnolagInputChanel {
+        width: 100%;
+        background-color: var(--backgroundColor);
+        color: var(--font-Color);
+        font-weight: bold;
+        font-size: var(--buttonFontSize);
+        transition: 0.2s all ease-in-out;
+      }
+      #wigetHolder #anolagInputChanelsSection
+        .imageBoxSensor .row #saveAnolagInputChanel:hover{
+        background-color: var(--btnBackground);
+        color: var(--font-Color);
+      }
+      #wigetHolder #anolagInputChanelsSection 
+       .imageBoxSensor .row #removeAnolaginputChanel {
+        width: 100%;
+        background-color: #850000;
+        color: var(--font-Color);
+        font-weight: bold;
+        transition: 0.2s all ease-in-out;
+        font-size: var(--buttonFontSize);
+
+      }
+      #wigetHolder #anolagInputChanelsSection  .imageBoxSensor .row #removeAnolaginputChanel:hover {
+        background-color: #DC0000;
+        color: var(--font-Color);
+      }
+
+
+      #wigetHolder #anolagInputChanelsSection .row  #complexExampleMessage{
+        border: 1px solid #ccc;
+        color: var(--inputCheckBackground);
+        text-align: left;
+        font-weight: 500;
+        line-height: 1.5;
+        font-family: cursive;
+      }

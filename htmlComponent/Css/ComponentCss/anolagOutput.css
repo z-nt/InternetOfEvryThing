@@ -1,0 +1,74 @@
+@import url("./comboBoxStyle.css");
+#wigetHolder .comboBox #AnolagOutputSection{
+    width: 100%;
+    height: 90%;
+    box-sizing: border-box;
+    display: none;
+    }
+
+
+    #wigetHolder .comboBox #AnolagOutputSection #Options{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    }
+
+
+    #wigetHolder .comboBox #AnolagOutputSection #Options .row{
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        justify-content: space-evenly;
+        box-sizing: border-box; 
+    }
+
+    #wigetHolder .comboBox #AnolagOutputSection #Options .row label{
+    position: relative;  
+    font-size: 1.5rem;
+    color: var(--backgroundColor);
+    font-weight: 700;  
+    line-height: 10px; 
+    margin: 0.4rem 0.3rem;
+    text-align: right;
+    height: 2rem;
+    align-items: center;
+    display: flex;
+    }
+
+    #wigetHolder .comboBox #AnolagOutputSection #Options .row input{
+        background-color:var(--inputCheckBackground);
+        color: var(--font-Color);
+        border-radius: 0.2rem;
+        font-size: 1.4rem;
+        font-weight: 500;
+        padding: .5rem;
+        margin: 0.2rem 0.2rem;
+        box-sizing: border-box;
+        border: none;
+    }
+
+
+
+
+
+
+#wigetHolder .comboBox #AnolagOutputSection #Options .row #scaleDevices{
+    border: none;
+    display: flex;
+    flex-direction: row;
+}
+
+#wigetHolder .comboBox #AnolagOutputSection #imgHolder{
+    height: 325px;
+}
+#wigetHolder .comboBox #description{
+    color: var(--inputBackground);
+    font-weight: bold;
+    text-align: right;
+    direction: rtl;
+    padding: 0.5rem;
+    position: relative;
+    right: 0.15rem;
+    font-size: var(--fontPragraphSize);
+
+}

@@ -1,0 +1,20 @@
+/* Root Styles */
+:root{
+    --backgroundColor : #100720;
+    --fontHeader-Size:2rem;
+    --fontPragraphSize:1rem;
+    --font-Color:#FFFFFF;
+    --font-Weight-bold:500;
+    --btnBackground:#472183;
+    --card-BoxSHoadow:0px 4px 8px 0px #82C3EC;
+    --paragraphColor:#7F8487;
+    --labelSize:0.9rem;
+    --inputBackground:#33363F;
+    --cardButtonColor : #82C3EC;
+    --LineHeight:1.5;
+    --buttonFontSize:1.3rem;
+    --headerSixFontSize:0.8rem;
+    --IoTMobileParaColor:#181D31;
+    --inputCheckBackground :#33363F;
+    --IotMobilColor:#FAF8F1;
+}

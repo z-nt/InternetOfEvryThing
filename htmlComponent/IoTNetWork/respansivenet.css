@@ -1,0 +1,39 @@
+@media screen and (max-width:910px) {
+    #networkSection .container
+    .securityTable h1{
+        text-align: center;
+    }
+    #networkSection .container
+    .securityTable p{
+        text-align: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+
+    #networkSection .container
+    .securityTable .row .netWorkCard .card h4{
+        text-align: center;
+    }
+    
+
+    #networkSection .container
+    .securityTable .row .netWorkCard .card p{
+        text-align: center;
+    }
+    #networkSection .container
+    .securityTableCard .row{
+        width: 200%;
+        margin:1rem auto;
+        box-sizing: border-box;
+    }
+    #networkSection .container
+    .securityTableCard {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+    
+    
+}

@@ -1,0 +1,14 @@
+/* set animate Style */
+.loginRegisterSection .boxAnimate{
+    background-color:#100720 ;
+}
+.loginRegisterSection .boxAnimate 
+ .objectBox{
+    height: 400px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    
+ }
+
