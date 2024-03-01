@@ -2,11 +2,5 @@
   "platform": "docker",
   "image": "getmeili/meilisearch:v0.23.0",
   "app": "kian-iot",
-  "port": 80,
-  "disks": [
-    {
-      "name": "data",
-      "mountTo": "/data.ms"
-    }
-  ]
+  "port": 80
 }
