@@ -1,7 +1,7 @@
 {
   "platform": "docker",
   "image": "getmeili/meilisearch:v0.23.0",
-  "app": "InternetOfEvryThing",
+  "app": "kian-iot",
   "port": 80,
   "disks": [
     {
