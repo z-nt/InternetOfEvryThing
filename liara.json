@@ -1,6 +1,5 @@
 {
   "platform": "docker",
-  "image": "nginx:stable-alpha",
   "app": "kian-iot",
   "port": 80
 }
